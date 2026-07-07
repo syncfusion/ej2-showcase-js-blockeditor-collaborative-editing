@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlockEditor Collaborative Editing</title>
+
+    <!-- Syncfusion EJ2 Theme -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/34.1.29/tailwind3.css" />
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/typography.css" />
+    <link rel="stylesheet" href="css/spacing.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/globals.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/editor-workspace.css" />
+    <link rel="stylesheet" href="css/editor-container.css" />
+    <link rel="stylesheet" href="css/collaboration-option.css" />
+    <link rel="stylesheet" href="css/connection-status.css" />
+    <link rel="stylesheet" href="css/sidebar-content.css" />
+    <link rel="stylesheet" href="css/collab-panel.css" />
+    <link rel="stylesheet" href="css/version-history-list.css" />
+    <link rel="stylesheet" href="css/label-rename-modal.css" />
+    
+</head>
+<body>
+    <div id="app">
+        <div id="header-area"></div>
+        <div id="hero-area"></div>
+        <div id="loading-area" style="display:none;"></div>
+        <div id="workspace-area"></div>
+    </div>
+
+    <!-- Syncfusion license key — replace with your own -->
+    <script>window.SyncfusionLicenseKey = 'YOUR_LICENSE_KEY';</script>
+
+    <!-- Syncfusion EJ2 all-in-one bundle -->
+    <script src="https://cdn.syncfusion.com/ej2/34.1.29/dist/ej2.min.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
+
+    <!-- Combined Yjs + y-websocket bundle (single instance — exposes window.Y and window.WebsocketProvider) -->
+    <script src="helpers/yjs-collab-bundle.js"></script>
+
+    <!-- TurndownService (HTML → Markdown) -->
+    <script src="https://unpkg.com/turndown@7.2.0/dist/turndown.js"></script>
+
+    <!-- Turndown GFM plugin -->
+    <script src="https://unpkg.com/turndown-plugin-gfm@1.0.2/dist/turndown-plugin-gfm.js"></script>
+
+    <!-- App utilities -->
+    <script src="js/utils/roomIdGenerator.js"></script>
+    <script src="js/utils/mockData.js"></script>
+    <script src="js/utils/urlHelpers.js"></script>
+
+    <!-- App services -->
+    <script src="js/services/userService.js"></script>
+    <script src="js/services/editorService.js"></script>
+    <script src="js/services/collaborationService.js"></script>
+    <script src="js/services/versionHistoryService.js"></script>
+    <script src="js/services/turndownService.js"></script>
+
+    <!-- App components -->
+    <script src="js/components/Header.js"></script>
+    <script src="js/components/Hero.js"></script>
+    <script src="js/components/LoadingSpinner.js"></script>
+    <script src="js/components/ConnectionStatus.js"></script>
+    <script src="js/components/CollaborationOption.js"></script>
+    <script src="js/components/LabelRenameModal.js"></script>
+    <script src="js/components/CollabPanel.js"></script>
+    <script src="js/components/VersionHistoryList.js"></script>
+    <script src="js/components/SidebarContent.js"></script>
+    <script src="js/components/EditorContainer.js"></script>
+    <script src="js/components/EditorWorkspace.js"></script>
+
+    <!-- App bootstrap -->
+    <script src="js/app.js"></script>
+</body>
+</html>
