@@ -1,3 +1,48 @@
+// Import CSS files
+import '../css/colors.css';
+import '../css/typography.css';
+import '../css/spacing.css';
+import '../css/theme.css';
+import '../css/globals.css';
+import '../css/app.css';
+import '../css/header.css';
+import '../css/hero.css';
+import '../css/editor-workspace.css';
+import '../css/editor-container.css';
+import '../css/collaboration-option.css';
+import '../css/connection-status.css';
+import '../css/sidebar-content.css';
+import '../css/collab-panel.css';
+import '../css/version-history-list.css';
+import '../css/label-rename-modal.css';
+
+// Import helper bundles
+import '../helpers/yjs-collab-bundle.js';
+
+// Import utilities
+import '../js/utils/roomIdGenerator.js';
+import '../js/utils/mockData.js';
+import '../js/utils/urlHelpers.js';
+
+// Import services
+import '../js/services/userService.js';
+import '../js/services/editorService.js';
+import '../js/services/collaborationService.js';
+import '../js/services/versionHistoryService.js';
+import '../js/services/turndownService.js';
+
+// Import components
+import '../js/components/Header.js';
+import '../js/components/Hero.js';
+import '../js/components/LoadingSpinner.js';
+import '../js/components/ConnectionStatus.js';
+import '../js/components/CollaborationOption.js';
+import '../js/components/LabelRenameModal.js';
+import '../js/components/CollabPanel.js';
+import '../js/components/VersionHistoryList.js';
+import '../js/components/SidebarContent.js';
+import '../js/components/EditorContainer.js';
+import '../js/components/EditorWorkspace.js';
 
 (function (App) {
     'use strict';

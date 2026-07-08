@@ -1,6 +1,9 @@
 (function (App) {
     'use strict';
 
+    // Import the logo so webpack bundles it
+    const logoSrc = require('../../assets/syncfusion-logo.ico');
+
     /**
      * Render the static header into the given container element.
      * @param {HTMLElement} container
@@ -11,7 +14,7 @@
             '  <div class="header-container">',
             '    <div class="header-left">',
             '      <a href="https://www.syncfusion.com/javascript-ui-controls/js-block-editor" target="_blank" class="header-logo nav-link">',
-            '        <img class="logo-icon" src="assets/syncfusion-logo.ico" alt="Syncfusion" />',
+            '        <img class="logo-icon" src="' + logoSrc + '" alt="Syncfusion" />',
             '        <span class="logo-text"><span class="brand">Syncfusion</span> <br /> Block Editor</span>',
             '      </a>',
             '      <nav class="header-nav">',
