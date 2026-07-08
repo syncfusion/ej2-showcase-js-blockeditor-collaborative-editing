@@ -4,22 +4,27 @@ A focused JavaScript (ES5) sample that demonstrates real-time collaboration in S
 
 ## Installation
 
-```bash
+To install the application dependencies, use the following command:
+
+```sh
 npm install
 ```
 
-## Running the Sample
+## Build the application
 
-### Option 1: Using Live Server (Recommended for Development)
+To Build the application, use the below command,
 
-1. Install the **Live Server** extension in your code editor (VS Code, etc.)
-2. Right-click on `index.html` and select "Open with Live Server"
-3. The sample will open in your browser automatically
-4. Open additional browser windows/tabs to the same URL to simulate multiple users
+```sh
+npm run build
+```
 
-### Option 2: Direct File Access
+## Run the application
 
-Simply open `index.html` directly in your browser (file:// protocol)
+To run the sample in the browser with live reload, use the following command:
+
+```sh
+npm run start
+```
 
 ## Demo
 
